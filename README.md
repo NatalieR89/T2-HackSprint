@@ -1,3 +1,3 @@
 T2-HackSprint
 
--Project Descriprion-
+-Project Description-
