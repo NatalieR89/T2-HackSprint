@@ -94,5 +94,105 @@
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   font-size: 1.2rem;
   color: #2e8b57;
+<<<<<<< HEAD
 }
 /* */
+=======
+}/* Section Styling */
+.why-eco-friendly {
+  background-color: #f4f9f4; /* Soft green */
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.why-eco-friendly h2 {
+  font-size: 2rem;
+  color: #2e8b57; /* Dark green */
+  margin-bottom: 20px;
+}
+
+/* Comparison Container */
+.comparison-container {
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.comparison-container div {
+  background: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  border-radius: 8px;
+  width: 45%;
+}
+
+.comparison-container h3 {
+  color: #2e8b57;
+  margin-bottom: 15px;
+}
+
+.comparison-container ul {
+  list-style: none;
+  padding: 0;
+}
+
+.comparison-container li {
+  margin-bottom: 10px;
+  font-size: 1rem;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Impact Statement */
+.impact-statement {
+  font-size: 1.2rem;
+  color: #2e8b57;
+  background: #e8f5e9; /* Light green */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+
+
+/* Eco Impact Container */
+.eco-impact-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.eco-impact-container div {
+  background: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  border-radius: 8px;
+  width: 48%;
+  text-align: left;
+}
+
+.eco-impact-container h3 {
+  color: #2e8b57;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.eco-impact-container p {
+  color: #333;
+  line-height: 1.6;
+  font-size: 1rem;
+}
+
+/* Fun Fact Styling */
+.fun-fact {
+  background-color: #e8f5e9; /* Light green */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  font-size: 1.2rem;
+  color: #2e8b57;
+}
+>>>>>>> 1c47316ecb441822a5a2edac5fdc0dde29c2451f
