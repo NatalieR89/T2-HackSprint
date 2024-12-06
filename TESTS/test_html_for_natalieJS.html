@@ -1,11 +1,10 @@
-<!--THIS IS JUST A TEST-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Eco-Travel Navigation</title>
-  <link rel="stylesheet" href="style.css">
+  <title>Interactive Dropdown Menu</title>
+  <link rel="stylesheet" href="test.css">
 </head>
 <body>
   <header>
@@ -20,14 +19,15 @@
         <li><a href="#contact">Contact</a></li>
         <li class="dropdown">
           <a href="#" class="dropbtn">Explore Cities</a>
-          <div class="dropdown-content">
-            <a href="#nyc">NYC</a>
-            <a href="#la">LA</a>
-            <a href="#atlanta">Atlanta</a>
-          </div>
+          <ul class="dropdown-content">
+            <li><a href="#nyc">NYC</a></li>
+            <li><a href="#la">LA</a></li>
+            <li><a href="#atlanta">Atlanta</a></li>
+          </ul>
         </li>
       </ul>
     </nav>
   </header>
+  <script src="testJS.js"></script>
 </body>
 </html>
