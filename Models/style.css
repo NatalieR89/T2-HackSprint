@@ -1,20 +1,56 @@
+/* General Body Styling */
 body {
-  font-family: Arial, sans-serif;
+  font-family: Arial, sans-serif; /* Default font for the body */
   margin: 0;
   padding: 0;
 }
+
+/* Navbar Styling */
+.navbar-logo span {
+  font-family: 'Cinzel Decorative', serif; /* Set font only for this text */
+  line-height: 1.2;
+  font-size: 1rem;
+  color: white; 
+}
+
+/* Section Headings */
+.why-eco-friendly h2,
+.comparison-container h3,
+.eco-impact-container h3,
+.impact-statement {
+  font-family: 'Cinzel Decorative', serif; /* Only apply Cinzel Decorative to these headings */
+}
+
+/* Example: Adjust other specific headings or areas you want */
+.navbar a {
+  font-family: Arial, sans-serif; /* Regular font for other links */
+}
+
 .navbar {
   background-color: #4CAF50;
-  display: flex;
+  display: flex; /* Flexbox layout for proper alignment */
+  align-items: center; /* Vertical alignment of items */
   justify-content: space-between;
   padding: 10px 20px;
+}
+
+.navbar-logo {
+  display: flex; /* Flexbox for the logo and text */
+  align-items: center; /* Vertically center the icon and text */
+  text-decoration: none; /* Remove link underline */
+  color: white; /* Text color */
 }
 
 .navbar-icon {
   height: 100px; /* Adjust as needed */
   width: auto;
-  vertical-align: middle; /* Aligns the icon with the text */
   margin-right: 10px; /* Adds spacing between the icon and text */
+}
+
+.navbar-logo span {
+  line-height: 1.2; /* Adjust spacing between lines of text */
+  font-size: 1rem; /* Font size for the text */
+  color: white; /* Text color */
 }
 
 .menu {
