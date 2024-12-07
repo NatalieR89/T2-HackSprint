@@ -10,6 +10,13 @@ body {
   padding: 10px 20px;
 }
 
+.navbar-icon {
+  height: 40px; /* Adjust as needed */
+  width: auto;
+  vertical-align: middle; /* Aligns the icon with the text */
+  margin-right: 10px; /* Adds spacing between the icon and text */
+}
+
 .menu {
   list-style: none;
   display: flex;
