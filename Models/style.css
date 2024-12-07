@@ -97,3 +97,9 @@ body {
   width: 48%;
   text-align: left;
 }
+
+.impact-statement p {
+  font-family: 'Cinzel Decorative', serif; /* Match the navbar logo font */
+  font-size: 1.2rem; /* Ensure it's the same size */
+  color: #224224; /* Match the navbar text color */
+}
