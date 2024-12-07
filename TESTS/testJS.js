@@ -1,16 +1,17 @@
 document.addEventListener('DOMContentLoaded', () => {
   const dropdown = document.querySelector('.dropdown');
-  const dropdownContent = dropdown.querySelector('.dropdown-content');
-  
-  // Toggle dropdown visibility
-  dropdown.addEventListener('click', () => {
-    dropdownContent.classList.toggle('show');
+  const dropdownContent = document.querySelector('.dropdown-content');
+
+  dropdown.addEventListener('click', (e) => {
+    e.preventDefault();
+    dropdownContent.style.display =
+      dropdownContent.style.display === 'block' ? 'none' : 'block';
   });
 
-  // Close the dropdown if clicked outside
-  document.addEventListener('click', (event) => {
-    if (!dropdown.contains(event.target)) {
-      dropdownContent.classList.remove('show');
+  // Optional: Close the dropdown if clicking outside
+  document.addEventListener('click', (e) => {
+    if (!dropdown.contains(e.target)) {
+      dropdownContent.style.display = 'none';
     }
   });
 });
