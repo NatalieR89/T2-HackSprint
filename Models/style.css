@@ -83,6 +83,12 @@ body {
   text-align: center;
 }
 
+.why-eco-friendly h2 {
+  font-size: 2rem;
+  color: #224224; /* Dark green */
+  font-family: 'Cinzel Decorative', serif; /* Use the same font as the navbar text */
+}
+
 .eco-impact-container {
   display: flex;
   justify-content: space-between;
