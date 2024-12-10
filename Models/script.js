@@ -15,8 +15,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // Add click event to dropdown
   dropdown.addEventListener('click', (e) => {
+    if (!e.target.matches('a')) {
     e.preventDefault();
     toggleDropdown();
+    }
   });
 
   // Optional: Close the dropdown if clicking outside
