@@ -1,93 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Los Angeles - Leaf & Luggage</title>
-    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="la.css"> <!-- LA-specific stylesheet -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Los Angeles - Leaf & Luggage</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="la.css">
 </head>
+
 <body>
-    <!-- Navbar -->
+  <!-- Full Page Wrapper -->
+  <div class="main-wrapper">
+
+    <!-- Navbar Section (Full Width) -->
     <header class="navbar">
-        <div class="navbar-logo">
-            <a href="../index.html">
-                <img src="../IMAGES/Leaf_Luggage.png" alt="EcoTravel Icon" class="navbar-icon">
-            </a>
-            <span class="navbar-text">Leaf and Luggage:<br>A Guide For Eco-Friendly Travel</span>
-        </div>
-        <ul class="menu">
-            <li><a href="#about">About Us</a></li>
-            <li><a href="sprouting.html">Blog</a></li>
-            <li><a href="sprouting.html">Get Involved</a></li>
-            <li><a href="sprouting.html">Contact</a></li>
-            <li class="dropdown">
-                <a href="#" class="dropbtn">Explore Cities</a>
-                <div class="dropdown-content">
-                    <a href="nyc.html">NYC</a>
-                    <a href="la.html">LA</a>
-                    <a href="atl.html">Atlanta</a>
-                </div>
-            </li>
-        </ul>
+      <div class="navbar-logo">
+        <a href="/index.html">
+          <img src="../IMAGES/Leaf_Luggage.png" alt="EcoTravel Icon" class="navbar-icon">
+        </a>
+        <span class="navbar-text">Leaf and Luggage:<br>A Guide For Eco-Friendly Travel</span>
+      </div>
+      <ul class="menu">
+        <li><a href="#about">About Us</a></li>
+        <li><a href="/Models/sprouting.html">Blog</a></li>
+        <li><a href="/Models/sprouting.html">Get Involved</a></li>
+        <li><a href="/Models/sprouting.html">Contact</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropbtn">Explore Cities</a>
+          <div class="dropdown-content">
+            <a href="/Models/nyc.html">NYC</a>
+            <a href="/Models/la.html" class="active">LA</a>
+            <a href="/Models/atl.html">Atlanta</a>
+          </div>
+        </li>
+      </ul>
     </header>
 
-    <!-- Hero Section -->
-    <div class="hero" style="background-image: url('../IMAGES/LAskyline.jpg');">
-        <div class="hero-text">
-            <h1>Discover Sustainable Adventures in Los Angeles</h1>
-            <p>Explore eco-friendly attractions, green dining, and sustainable stays in the City of Angels.</p>
-        </div>
-    </div>
-
-    <!-- Slideshow Section -->
-    <div class="slideshow-wrapper">
-        <div id="slideshow1" class="slideshow-container">
-            <img src="../IMAGES/LAskyline.jpg" alt="Los Angeles Skyline">
-            <img src="../IMAGES/SantaMonica.jpg" alt="Santa Monica Pier">
-            <img src="../IMAGES/GriffithPark.jpg" alt="Griffith Park">
-        </div>
-    </div>
-
-    <!-- Slideshow Controls -->
-    <div class="controls">
-        <button onclick="plusSlides(-1, 0)">❮</button>
-        <button onclick="plusSlides(1, 0)">❯</button>
-    </div>
-
-    <!-- Content -->
+    <!-- LA Main Content -->
     <div class="content-wrapper">
-        <!-- Eco-Friendly Attractions -->
-        <section class="left-section">
-            <h2>Eco-Friendly Attractions</h2>
-            <div class="card">
-                <h3>Griffith Park</h3>
-                <p>Experience breathtaking hikes while supporting wildlife conservation efforts.</p>
+      <div class="left-section">
+        <div class="slideshow-container">
+          <h3>Eco Attractions</h3>
+          <div class="slideshow" id="slideshow1">
+            <img src="../IMAGES/LAskyline.jpg" alt="Los Angeles Skyline">
+            <img src="../IMAGES/GriffithPark.jpg" alt="Griffith Park">
+            <img src="../IMAGES/SantaMonica.jpg" alt="Santa Monica">
+          </div>
+          <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
+        </div>
+        <div class="slideshow-container">
+          <h3>Sustainable Dining</h3>
+          <div class="slideshow" id="slideshow2">
+            <img src="../IMAGES/GraciasMadre.jpg" alt="Gracias Madre">
+            <img src="../IMAGES/CrossroadsKitchen.jpg" alt="Crossroads Kitchen">
+          </div>
+          <a class="prev" onclick="plusSlides(-1, 1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1, 1)">&#10095;</a>
+        </div>
+      </div>
+      <div class="right-section">
+        <section class="why-eco-friendly">
+          <h2>Eco-Friendly Travel in Los Angeles</h2>
+          <div class="eco-impact-container">
+            <div class="traditional-impact">
+              <h3>Sustainability Facts</h3>
+              <p>🌳 Explore Griffith Park's stunning trails.</p>
+              <p>🍽️ Dine at top sustainable restaurants.</p>
             </div>
-            <div class="card">
-                <h3>The Getty Center</h3>
-                <p>A stunning museum showcasing sustainable architecture and world-class art.</p>
+            <div class="eco-friendly-impact">
+              <h3>How to Travel Sustainably in LA</h3>
+              <p>🚶 Walk along Santa Monica's eco-friendly boardwalk.</p>
+              <p>🌞 Stay in green-certified hotels.</p>
             </div>
+          </div>
+          <div class="impact-statement">
+            <p>🌱 Choosing eco-friendly options in LA supports sustainability and reduces your footprint.</p>
+          </div>
         </section>
-
-        <!-- Sustainable Dining -->
-        <section class="right-section">
-            <h2>Sustainable Dining Options</h2>
-            <div class="card">
-                <h3>Gracias Madre</h3>
-                <p>Plant-based Mexican cuisine with locally sourced ingredients.</p>
-            </div>
-            <div class="card">
-                <h3>Crossroads Kitchen</h3>
-                <p>Elegant vegan dining with a focus on eco-conscious gastronomy.</p>
-            </div>
-        </section>
+      </div>
     </div>
-
-    <!-- Footer -->
-    <footer>
-        <p>© 2024 Leaf & Luggage. All rights reserved.</p>
-    </footer>
-    <script src="slideshow.js"></script>
+  </div>
+  <script src="script.js"></script>
+  <script src="slideshow.js"></script>
 </body>
+
 </html>
