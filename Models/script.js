@@ -47,15 +47,13 @@ backToTopButton.style.cursor = "pointer";
 backToTopButton.style.display = "none";
 
 window.addEventListener('scroll', () => {
-    console.log('Scroll event triggered');
-    if (window.scrollY > 300) {
-        backToTopButton.style.display = "block";
-    } else {
-        backToTopButton.style.display = "none";
-    }
+  if (window.scrollY > 300) {
+    backToTopButton.style.display = "block";
+  } else {
+    backToTopButton.style.display = "none";
+  }
 });
 
 backToTopButton.addEventListener('click', () => {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-});
+  window.scrollTo({ top: 0, behavior: 'smooth' });
 });
