@@ -47,6 +47,7 @@ backToTopButton.style.cursor = "pointer";
 backToTopButton.style.display = "none";
 
 window.addEventListener('scroll', () => {
+    console.log('Scroll event triggered');
     if (window.scrollY > 300) {
         backToTopButton.style.display = "block";
     } else {
