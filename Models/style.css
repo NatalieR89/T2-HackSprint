@@ -118,32 +118,44 @@ body {
   padding: 20px;
 }
 
-/* Left Section - Editorial */
-.left-section.editorial-section {
+/* Left Section */
+.left-section,
+.right-section {
   flex: 1;
-  background-color: #fff;
   padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
 }
 
-.editorial-section img {
-  max-width: 100%;
-  height: auto;
+/* Editorial Section */
+.editorial-section {
+  background-color: #e0ead0;
+  padding: 20px;
+  border: 1px solid #224224;
   border-radius: 8px;
-  margin-bottom: 15px;
 }
 
 .editorial-section h2 {
-  margin-bottom: 10px;
   font-size: 1.8rem;
-  color: #2d6f2f;
+  margin-bottom: 10px;
+  color: #224224;
 }
 
 .editorial-section p {
+  margin-bottom: 10px;
+  font-size: 1rem;
   line-height: 1.6;
-  font-size: 15px;
-  color: #555;
+}
+
+.editorial-image-container {
+  margin-top: 15px;
+  text-align: center;
+}
+
+.editorial-image-container img {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  border-radius: 8px;
 }
 
 /* Right Section */
