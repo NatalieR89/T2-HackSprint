@@ -1,0 +1,100 @@
+/* General Body Styling */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4e3;
+}
+
+/* Hero Section */
+.hero {
+  background-size: cover;
+  background-position: center;
+  height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+}
+
+.hero-text {
+  background: rgba(0, 0, 0, 0.5); /* Overlay for readability */
+  padding: 20px;
+  border-radius: 8px;
+}
+
+/* Slideshow Styles */
+.slideshow-container {
+    position: relative;
+    max-width: 100%;
+    margin: auto;
+    display: flex;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+}
+
+.slideshow-container img {
+    display: none;
+    width: 100%;
+    height: auto;
+}
+
+.slideshow-wrapper {
+    margin: 20px auto;
+    text-align: center;
+}
+
+/* Controls */
+.controls button {
+    background-color: #224224;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.controls button:hover {
+    background-color: #d7c6aa;
+    color: #224224;
+}
+
+/* Content Wrapper */
+.content-wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  gap: 20px;
+}
+
+.left-section, .right-section {
+  width: 48%;
+}
+
+.card {
+  background-color: #d7c6aa;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .content-wrapper {
+    flex-direction: column;
+  }
+
+  .left-section, .right-section {
+    width: 100%;
+  }
+
+  .hero {
+    height: 40vh;
+  }
+}

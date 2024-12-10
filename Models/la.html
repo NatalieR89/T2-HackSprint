@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Los Angeles - Leaf & Luggage</title>
     <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="la.css"> <!-- LA-specific stylesheet -->
 </head>
 <body>
     <!-- Navbar -->
@@ -38,6 +38,21 @@
             <h1>Discover Sustainable Adventures in Los Angeles</h1>
             <p>Explore eco-friendly attractions, green dining, and sustainable stays in the City of Angels.</p>
         </div>
+    </div>
+
+    <!-- Slideshow Section -->
+    <div class="slideshow-wrapper">
+        <div id="slideshow1" class="slideshow-container">
+            <img src="../IMAGES/LAskyline.jpg" alt="Los Angeles Skyline">
+            <img src="../IMAGES/SantaMonica.jpg" alt="Santa Monica Pier">
+            <img src="../IMAGES/GriffithPark.jpg" alt="Griffith Park">
+        </div>
+    </div>
+
+    <!-- Slideshow Controls -->
+    <div class="controls">
+        <button onclick="plusSlides(-1, 0)">❮</button>
+        <button onclick="plusSlides(1, 0)">❯</button>
     </div>
 
     <!-- Content -->
@@ -73,5 +88,6 @@
     <footer>
         <p>© 2024 Leaf & Luggage. All rights reserved.</p>
     </footer>
+    <script src="slideshow.js"></script>
 </body>
 </html>
