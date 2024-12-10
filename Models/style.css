@@ -134,6 +134,14 @@ body {
   border-radius: 8px;
 }
 
+/* Editorial Image */
+.editorial-image-container img {
+  max-width: 900px; /* Restrict max width */
+  width: 100%; /* Allow it to scale down on smaller screens */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 8px; /* Optional for style */
+}
+
 /* Compare Section Adjustments */
 .right-section {
   background-color: #d7c6aa;
