@@ -136,10 +136,10 @@ body {
 
 /* Editorial Image */
 .editorial-image-container img {
-  max-width: 900px; /* Restrict max width */
-  width: 100%; /* Allow it to scale down on smaller screens */
-  height: auto; /* Maintain aspect ratio */
-  border-radius: 8px; /* Optional for style */
+  max-width: 900px; /* Restrict maximum width */
+  height: 300px; /* Fixed height */
+  width: auto; /* Keep the aspect ratio consistent */
+  border-radius: 8px; /* Optional rounded corners */
 }
 
 /* Compare Section Adjustments */
