@@ -29,36 +29,32 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 
-// Back to Top Button Functionality
-document.addEventListener('DOMContentLoaded', function () {
-  const backToTopButton = document.createElement('button');
-  backToTopButton.innerText = "↑ Back to Top";
-  backToTopButton.id = "back-to-top";
-  document.body.appendChild(backToTopButton);
+// Back to Top Button functionality
+const backToTopButton = document.createElement('button');
+backToTopButton.innerText = "↑ Back to Top";
+backToTopButton.id = "back-to-top";
+document.body.appendChild(backToTopButton);
 
-  // Style the button (optional, for quick demo purposes)
-  backToTopButton.style.position = "fixed";
-  backToTopButton.style.bottom = "20px";
-  backToTopButton.style.right = "20px";
-  backToTopButton.style.padding = "10px 15px";
-  backToTopButton.style.backgroundColor = "#224224";
-  backToTopButton.style.color = "#fff";
-  backToTopButton.style.border = "none";
-  backToTopButton.style.borderRadius = "5px";
-  backToTopButton.style.cursor = "pointer";
-  backToTopButton.style.display = "none"; // Initially hidden
+backToTopButton.style.position = "fixed";
+backToTopButton.style.bottom = "20px";
+backToTopButton.style.right = "20px";
+backToTopButton.style.padding = "10px 15px";
+backToTopButton.style.backgroundColor = "#224224";
+backToTopButton.style.color = "#fff";
+backToTopButton.style.border = "none";
+backToTopButton.style.borderRadius = "5px";
+backToTopButton.style.cursor = "pointer";
+backToTopButton.style.display = "none";
 
-  // Show or hide the button based on scroll position
-  window.addEventListener('scroll', () => {
+window.addEventListener('scroll', () => {
     if (window.scrollY > 300) {
-      backToTopButton.style.display = "block";
+        backToTopButton.style.display = "block";
     } else {
-      backToTopButton.style.display = "none";
+        backToTopButton.style.display = "none";
     }
-  });
+});
 
-  // Scroll to top on button click
-  backToTopButton.addEventListener('click', () => {
+backToTopButton.addEventListener('click', () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
-  });
+});
 });
