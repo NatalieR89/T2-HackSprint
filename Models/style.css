@@ -206,3 +206,22 @@ body {
   line-height: 1.8; /* Improve readability with proper line spacing */
   color: #333; /* Adjust text color for better contrast if necessary */
 }
+
+/* Back to Top Button */
+#back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 10px 15px;
+  background-color: #556b2f; /* Match your theme */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  display: none; /* Initially hidden */
+}
+
+#back-to-top:hover {
+  background-color: #224224; /* Darker shade for hover */
+}
