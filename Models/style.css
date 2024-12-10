@@ -177,3 +177,12 @@ body {
   font-size: 1.2rem;
   color: #224224; /* Dark green */
 }
+
+/* Editorial Section Heading Styling */
+.editorial-section h2,
+.why-eco-friendly h2 {
+  font-family: 'Cinzel Decorative', serif;
+  color: #224224; /* Match the deep green theme */
+  font-size: 2.4rem; /* Keep consistent with other headings */
+  margin-bottom: 15px;
+}
