@@ -31,20 +31,22 @@ document.addEventListener('DOMContentLoaded', () => {
   backToTopButton.style.cursor = "pointer";
   backToTopButton.style.display = "none";
 
+  // Handle scroll events
   window.addEventListener('scroll', () => {
     if (window.scrollY > 300) {
       backToTopButton.style.display = "block";
     } else {
       backToTopButton.style.display = "none";
-      
-      // Force reset dropdown visibility when scrolling up
-      dropdownContent.classList.remove('visible');
+
+      // Hide dropdown only if it's open when scrolling
+      if (dropdownContent.classList.contains('visible')) {
+        dropdownContent.classList.remove('visible');
+      }
     }
   });
 
   backToTopButton.addEventListener('click', () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
-    dropdownContent.classList.remove('visible');
   });
 
   // Dropdown click listener
