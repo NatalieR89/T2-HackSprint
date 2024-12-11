@@ -27,14 +27,14 @@ body {
 }
 
 .navbar-icon {
-  height: 60px; /* Adjust icon to match homepage */
+  height: 100px; /* Adjust icon to match homepage */
   width: auto;
   margin-right: 10px;
 }
 
 .navbar-text {
   font-family: 'Cinzel Decorative', serif;
-  font-size: 1.8rem;
+  font-size: 2rem;
   line-height: 1.2;
 }
 
