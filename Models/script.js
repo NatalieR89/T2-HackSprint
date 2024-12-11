@@ -40,6 +40,7 @@ document.addEventListener('DOMContentLoaded', () => {
     display: none;
   `;
 
+   // Show/hide Back-to-Top button based on scroll
   window.addEventListener('scroll', () => {
     if (window.scrollY > 300) {
       backToTopButton.style.display = 'block';
@@ -48,10 +49,20 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 
+  // Back to top logic with dropdown reset
   backToTopButton.addEventListener('click', () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
     
-    // Force dropdown reset safely without breaking visibility
-    setTimeout(() => dropdownContent.classList.remove('visible'), 300);
+    // Allow time for scroll effect and ensure dropdown resets properly
+    setTimeout(() => {
+      dropdownContent.classList.remove('visible');
+    }, 300);
   });
+
+  // Ensure clicking a dropdown restores visibility properly
+  function restoreDropdownOnPageFocus() {
+    dropdownContent.classList.remove('visible');
+  }
+
+  window.addEventListener('focus', restoreDropdownOnPageFocus);
 });
