@@ -7,6 +7,13 @@ document.addEventListener('DOMContentLoaded', () => {
     dropdownContent.classList.toggle('visible');
   }
 
+  // Handle clicking the dropdown button
+  dropdown.querySelector('.dropbtn').addEventListener('click', (e) => {
+    e.preventDefault();
+    toggleDropdown();
+  });
+
+
   // Close dropdown when clicking outside
   document.addEventListener('click', (e) => {
     if (!dropdown.contains(e.target)) {
@@ -14,49 +21,37 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 
-  // Handle Back to Top button creation
+  // Back to Top button logic
   const backToTopButton = document.createElement('button');
-  backToTopButton.innerText = "↑ Back to Top";
-  backToTopButton.id = "back-to-top";
+  backToTopButton.innerText = '↑ Back to Top';
+  backToTopButton.id = 'back-to-top';
   document.body.appendChild(backToTopButton);
 
-  backToTopButton.style.position = "fixed";
-  backToTopButton.style.bottom = "20px";
-  backToTopButton.style.right = "20px";
-  backToTopButton.style.padding = "10px 15px";
-  backToTopButton.style.backgroundColor = "#224224";
-  backToTopButton.style.color = "#fff";
-  backToTopButton.style.border = "none";
-  backToTopButton.style.borderRadius = "5px";
-  backToTopButton.style.cursor = "pointer";
-  backToTopButton.style.display = "none";
+  backToTopButton.style.cssText = `
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 15px;
+    background-color: #224224;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: none;
+  `;
 
-  // Handle scroll events
   window.addEventListener('scroll', () => {
     if (window.scrollY > 300) {
-      backToTopButton.style.display = "block";
+      backToTopButton.style.display = 'block';
     } else {
-      backToTopButton.style.display = "none";
-
-      // Hide dropdown only if it's open when scrolling
-      if (dropdownContent.classList.contains('visible')) {
-        dropdownContent.classList.remove('visible');
-      }
+      backToTopButton.style.display = 'none';
     }
   });
 
   backToTopButton.addEventListener('click', () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
-  });
-
-    // Prevent dropdown from staying visible after scrolling back up
-    dropdownContent.classList.remove('visible');
-  });
-
-
-  // Dropdown click listener
-  dropdown.querySelector('.dropbtn').addEventListener('click', (e) => {
-    e.preventDefault();
-    toggleDropdown();
+    
+    // Force dropdown reset safely without breaking visibility
+    setTimeout(() => dropdownContent.classList.remove('visible'), 300);
   });
 });
