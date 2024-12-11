@@ -49,6 +49,11 @@ document.addEventListener('DOMContentLoaded', () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   });
 
+    // Prevent dropdown from staying visible after scrolling back up
+    dropdownContent.classList.remove('visible');
+  });
+
+
   // Dropdown click listener
   dropdown.querySelector('.dropbtn').addEventListener('click', (e) => {
     e.preventDefault();
