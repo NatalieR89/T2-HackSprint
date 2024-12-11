@@ -17,6 +17,8 @@ body {
   position: fixed; 
   z-index: 1000;
   width: 100%;
+  box-sizing: border-box;
+  overflow: hidden;  /* Ensures items don't overflow */
 }
 
 /* Logo & Text Adjustments */
@@ -42,8 +44,10 @@ body {
 .menu {
   list-style: none;
   display: flex;
+  gap: 10px;  /* Reduce gap to ensure items fit */
   margin: 0;
   padding: 0;
+  overflow: auto;  /* Allow horizontal scrolling if needed */
 }
 
 .menu li {
@@ -53,8 +57,19 @@ body {
 .menu a {
   text-decoration: none;
   color: #224224;
-  padding: 8px 12px;
-  transition: background-color 0.3s ease;
+  padding: 5px 8px;
+  font-size: 1rem
+}
+
+/* Responsive Navbar */
+@media (max-width: 768px) {
+  .menu {
+    gap: 8px; /* Reduce gaps on smaller screens */
+  }
+
+  .menu a {
+    font-size: 0.9rem;
+  }
 }
 
 .menu a:hover {
