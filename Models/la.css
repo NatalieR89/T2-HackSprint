@@ -6,7 +6,7 @@ body {
   background-color: #f4f4e3;
 }
 
-/* Navbar Styling */
+/* General Reset for Navbar */
 .navbar {
   background-color: #f4f4e3;
   border-bottom: 2px solid #224224;
@@ -14,9 +14,51 @@ body {
   align-items: center;
   justify-content: space-between;
   padding: 10px 20px;
-  position: relative; /* Ensures it sits at the top properly */
-  z-index: 100; /* Keeps navbar always above hero image */
+  position: fixed; 
+  z-index: 1000;
+  width: 100%;
 }
+
+/* Logo Styling */
+.navbar-logo {
+  display: flex;
+  align-items: center;
+  color: #224224;
+}
+
+.navbar-icon {
+  height: 40px; /* Adjust to fit the design */
+  width: auto;
+  margin-right: 10px;
+}
+
+.navbar-text {
+  font-family: 'Cinzel Decorative', serif;
+  font-size: 1.6rem;
+  line-height: 1.2;
+}
+
+/* Menu Styling */
+.menu {
+  list-style: none;
+  display: flex;
+  gap: 15px; /* Space between menu items */
+  margin: 0;
+  padding: 0;
+}
+
+.menu a {
+  text-decoration: none;
+  color: #224224;
+  padding: 8px 12px;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.menu a:hover {
+  background-color: #d7c6aa;
+  border-radius: 4px;
+} /* Keeps navbar always above hero image */
 
 /* Hero Section */
 .hero {
