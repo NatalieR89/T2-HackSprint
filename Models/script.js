@@ -63,3 +63,4 @@ document.addEventListener('DOMContentLoaded', () => {
       dropdownContent.classList.remove('visible');
     }, 300);
   });
+});
