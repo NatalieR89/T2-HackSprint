@@ -129,7 +129,6 @@ body {
 .left-section,
 .right-section {
   flex: 1 1 auto; /* Allow both sections to share equal space */
-  padding: 20px;
   box-sizing: border-box;
 }
 
