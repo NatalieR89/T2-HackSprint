@@ -6,17 +6,26 @@ body {
   background-color: #f4f4e3;
 }
 
+.navbar {
+  height: 100px; /* Ensure this matches or is close */
+  position: relative;
+  z-index: 10; /* Keep it above the hero image */
+}
+
 /* Hero Section */
 .hero {
   background-image: url('../IMAGES/LAskyline.jpg');
   background-size: cover;
   background-position: center;
   height: 60vh;
+  margin-bottom: 20px;  /* Space below the hero image */
   display: flex;
   align-items: center;
   justify-content: center;
   color: white;
   text-align: center;
+  z-index: 0;
+  position: relative;
 }
 
 .hero-text {
