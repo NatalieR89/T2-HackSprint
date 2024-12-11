@@ -6,17 +6,16 @@ body {
   background-color: #f4f4e3;
 }
 
-/* Navbar */
+/* Navbar Styling */
 .navbar {
-  height: 100px;
-  position: relative;
-  z-index: 100; /* Force navbar above hero */
-  background-color: #224224; /* Adjust navbar background color */
+  background-color: #f4f4e3;
+  border-bottom: 2px solid #224224;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 20px;
-  color: white;
+  padding: 10px 20px;
+  position: relative; /* Ensures it sits at the top properly */
+  z-index: 100; /* Keeps navbar always above hero image */
 }
 
 /* Hero Section */
@@ -25,12 +24,11 @@ body {
   background-size: cover;
   background-position: center;
   height: 60vh;
+  margin-bottom: 20px;  /* Space below the hero image */
   display: flex;
   align-items: center;
   justify-content: center;
   color: white;
-  text-align: center;
-  margin-bottom: 20px;  /* Space below the hero image */
   z-index: 0;
   position: relative;
 }
