@@ -4,32 +4,24 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // Function to toggle dropdown visibility with animation
   function toggleDropdown() {
-    if (dropdownContent.style.maxHeight) {
-      dropdownContent.style.maxHeight = null; // Collapse the dropdown
-      dropdownContent.style.opacity = '0'; // Fade out
-    } else {
-      dropdownContent.style.maxHeight = dropdownContent.scrollHeight + 'px'; // Expand the dropdown
-      dropdownContent.style.opacity = '1'; // Fade in
-    }
+    dropdownContent.classList.toggle('visible');
   }
 
   // Add click event to dropdown
   dropdown.addEventListener('click', (e) => {
     if (!e.target.matches('a')) {
-    e.preventDefault();
-    toggleDropdown();
+      e.preventDefault();
+      toggleDropdown();
     }
   });
 
   // Optional: Close the dropdown if clicking outside
   document.addEventListener('click', (e) => {
     if (!dropdown.contains(e.target)) {
-      dropdownContent.style.maxHeight = null;
-      dropdownContent.style.opacity = '0';
+      dropdownContent.classList.remove('visible');
     }
   });
 });
-
 
 // Back to Top Button functionality
 const backToTopButton = document.createElement('button');

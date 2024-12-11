@@ -77,6 +77,13 @@ body {
   list-style: none;
   margin: 0;
   padding: 0;
+  transition: all 0.3s ease; /* Smooth transitions */
+}
+
+.dropdown-content.visible {
+  display: block;
+  max-height: 200px; /* Set a limit or animation */
+  opacity: 1;
 }
 
 .dropdown-content a {
