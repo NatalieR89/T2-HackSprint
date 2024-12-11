@@ -4,12 +4,14 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // Toggle dropdown visibility
   function toggleDropdown() {
+    console.log('Toggling dropdown visibility');
     dropdownContent.classList.toggle('visible');
   }
 
   // Handle clicking the dropdown button
   dropdown.querySelector('.dropbtn').addEventListener('click', (e) => {
     e.preventDefault();
+    console.log('Dropdown clicked');
     toggleDropdown();
   });
 
@@ -17,6 +19,7 @@ document.addEventListener('DOMContentLoaded', () => {
   // Close dropdown when clicking outside
   document.addEventListener('click', (e) => {
     if (!dropdown.contains(e.target)) {
+      console.log('Click outside dropdown');
       dropdownContent.classList.remove('visible');
     }
   });
@@ -51,18 +54,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // Back to top logic with dropdown reset
   backToTopButton.addEventListener('click', () => {
+    console.log('Back to Top clicked');
     window.scrollTo({ top: 0, behavior: 'smooth' });
     
     // Allow time for scroll effect and ensure dropdown resets properly
     setTimeout(() => {
+      console.log('Dropdown visibility reset');
       dropdownContent.classList.remove('visible');
     }, 300);
   });
-
-  // Ensure clicking a dropdown restores visibility properly
-  function restoreDropdownOnPageFocus() {
-    dropdownContent.classList.remove('visible');
-  }
-
-  window.addEventListener('focus', restoreDropdownOnPageFocus);
-});
